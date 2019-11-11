@@ -1,0 +1,6 @@
+_extends: .github
+repository:
+  name: .travis-ci
+  description: Repository of reusable configuration for Travis CI
+  homepage: 'https://github.com/form8ion/.travis-ci#readme'
+  private: false
