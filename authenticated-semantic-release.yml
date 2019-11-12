@@ -1,4 +1,4 @@
 import:
   - semantic-release.yml
   - gh-token-env.yml
-  - npm-token-publish.yml
+  - npm-token-publish-env.yml
