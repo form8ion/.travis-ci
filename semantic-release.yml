@@ -1,0 +1,10 @@
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+(-(alpha|beta)\.\d+(@(alpha|beta))?)?$/
+
+deploy:
+  - provider: script
+    edge: true
+    script: npx semantic-release@beta
+    on:
+      all_branches: true
