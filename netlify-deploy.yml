@@ -1,0 +1,4 @@
+deploy:
+  edge: true
+  provider: script
+  script: npm run deploy:netlify
