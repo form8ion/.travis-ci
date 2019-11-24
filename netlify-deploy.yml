@@ -1,4 +1,4 @@
 deploy:
-  edge: true
-  provider: script
-  script: npm run deploy:netlify
+  - edge: true
+    provider: script
+    script: npm run deploy:netlify
