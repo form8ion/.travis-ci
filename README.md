@@ -40,6 +40,8 @@ that these are available.
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
 [![PRs Welcome][PRs-badge]][PRs-link]
+[![Greenkeeper badge][greenkeeper-badge]][greenkeeper-link]
+
 
 ### Dependencies
 
@@ -64,3 +66,5 @@ $ npm test
 [commitizen-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 [PRs-link]: http://makeapullrequest.com
 [PRs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
+[greenkeeper-badge]: https://badges.greenkeeper.io/form8ion/.travis-ci.svg
+[greenkeeper-link]: https://greenkeeper.io/
