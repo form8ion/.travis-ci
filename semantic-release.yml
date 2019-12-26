@@ -2,6 +2,9 @@ branches:
   except:
     - /^v\d+\.\d+\.\d+(-(alpha|beta)\.\d+(@(alpha|beta))?)?$/
 
+before_install:
+  - curl ifconfig.co
+
 deploy:
   - provider: script
     edge: true
