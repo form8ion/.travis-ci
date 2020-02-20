@@ -1,0 +1,8 @@
+cache:
+  directories:
+    - ~/.cache
+
+addons:
+  apt:
+    packages:
+      - libgconf-2-4
