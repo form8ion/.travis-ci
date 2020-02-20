@@ -1,0 +1,17 @@
+import:
+  - semantic-release-tag-exclusion.yml
+
+before_install:
+  - curl ifconfig.co
+
+jobs:
+  include:
+    - stage: publish
+      name: Publish with semantic-release
+      script: skip
+      deploy:
+        provider: script
+        edge: true
+        script: npx semantic-release
+        on:
+          all_branches: true
