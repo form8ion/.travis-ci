@@ -1,6 +1,5 @@
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+(-(alpha|beta)\.\d+(@(alpha|beta))?)?$/
+import:
+  - semantic-release-tag-exclusion.yml
 
 before_install:
   - curl ifconfig.co

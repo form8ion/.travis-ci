@@ -1,0 +1,3 @@
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+(-(alpha|beta)\.\d+(@(alpha|beta))?)?$/
