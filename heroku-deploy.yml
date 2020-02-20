@@ -1,0 +1,7 @@
+deploy:
+  - edge: true
+    provider: heroku:git
+    # As described in https://docs.travis-ci.com/user/deployment-v2/providers/heroku/#environment-variables
+    # provide additional options with environment variables, such as
+    # an encrypted api-key with HEROKU_API_KEY
+    # or the application name with HEROKU_APP
