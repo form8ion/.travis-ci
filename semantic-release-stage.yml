@@ -6,7 +6,7 @@ before_install:
 
 jobs:
   include:
-    - stage: publish
+    - stage: deploy
       name: Publish with semantic-release
       script: skip
       deploy:
