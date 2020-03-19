@@ -1,0 +1,9 @@
+jobs:
+  include:
+    - stage: deploy
+      name: Deploy to Netlify
+      script: skip
+      deploy:
+        provider: script
+        edge: true
+        script: npm run deploy:netlify
