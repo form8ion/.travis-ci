@@ -16,3 +16,5 @@ jobs:
         provider: script
         edge: true
         script: npm run deploy:netlify
+        on:
+          all_branches: true
