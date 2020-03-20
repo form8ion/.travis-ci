@@ -2,6 +2,15 @@ jobs:
   include:
     - stage: deploy
       name: Deploy to Netlify
+      if: branch = master AND type != pull_request
+      script: skip
+      deploy:
+        provider: script
+        edge: true
+        script: npm run deploy:netlify -- --prod
+    - stage: deploy
+      name: Deploy preview to Netlify
+      if: branch != master
       script: skip
       deploy:
         provider: script
