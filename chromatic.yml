@@ -1,0 +1,12 @@
+jobs:
+  include:
+  - stage: deploy
+    name: Publish Storybook to Chromatic
+    if: type != pull_request OR repo != head_repo
+    script: skip
+    deploy:
+      provider: script
+      edge: true
+      script: npm run deploy:chromatic
+      on:
+        all_branches: true
