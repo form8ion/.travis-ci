@@ -9,6 +9,7 @@ jobs:
     - stage: deploy
       name: Publish with semantic-release
       script: skip
+      node_js: 14
       deploy:
         provider: script
         edge: true
