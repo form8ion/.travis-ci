@@ -7,6 +7,6 @@ jobs:
     deploy:
       provider: script
       edge: true
-      script: npm run deploy:chromatic
+      script: npm run deploy:chromatic -- $( (( $TRAVIS_BRANCH  == 'master' )) && printf %s '--auto-accept-changes' )
       on:
         all_branches: true
